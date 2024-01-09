@@ -1,4 +1,4 @@
-package Hw_4_Условный_оператор;
+package Hw_4_условный_оператор;
 
 public class Task1 {
 
