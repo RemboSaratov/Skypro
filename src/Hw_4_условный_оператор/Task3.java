@@ -11,5 +11,4 @@ public class Task3 {
             System.out.println("Если скорость " + speed + " км/ч,то можно ездить спокойно");
         }
     }
-
 }
