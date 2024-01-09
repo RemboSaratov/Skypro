@@ -1,6 +1,7 @@
 package Hw_4_условный_оператор;
 
 public class Task2 {
+    //изменения для коммита
 
     public static void main(String[] args) {
         int temperature = 15;
