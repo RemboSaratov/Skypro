@@ -5,10 +5,10 @@ public class Task3 {
     public static void main(String[] args) {
         int speed = 70;
         if (speed > 60) {
-            System.out.println("Если скорость " + speed + " ,то придется заплатить штраф");
+            System.out.println("Если скорость " + speed + " км/ч,то придется заплатить штраф");
         }
         if (speed < 60) {
-            System.out.println("Если скорость " + speed + " ,то можно ездить спокойно");
+            System.out.println("Если скорость " + speed + " км/ч,то можно ездить спокойно");
         }
     }
 
