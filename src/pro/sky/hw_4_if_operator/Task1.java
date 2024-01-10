@@ -1,4 +1,4 @@
-package Hw_4_условный_оператор;
+package pro.sky.hw_4_if_operator;
 
 public class Task1 {
 

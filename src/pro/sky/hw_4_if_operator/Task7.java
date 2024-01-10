@@ -1,4 +1,4 @@
-package Hw_4_условный_оператор;
+package pro.sky.hw_4_if_operator;
 
 public class Task7 {
 
@@ -10,7 +10,7 @@ public class Task7 {
             System.out.println(three);
         } else if (three < two && one < two) {
             System.out.println(two);
-        } else if (two < one && three < one) {
+        } else {
             System.out.println(one);
         }
     }

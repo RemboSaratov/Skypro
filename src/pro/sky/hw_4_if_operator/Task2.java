@@ -1,4 +1,4 @@
-package Hw_4_условный_оператор;
+package pro.sky.hw_4_if_operator;
 
 public class Task2 {
     //изменения для коммита
@@ -7,8 +7,7 @@ public class Task2 {
         int temperature = 15;
         if (temperature < 5) {
             System.out.println("На улице " + temperature + " градусов, нужно надеть шапку");
-        }
-        if (temperature > 5) {
+        } else {
             System.out.println("На улице " + temperature + " градусов, можно идти без шапки");
         }
     }
