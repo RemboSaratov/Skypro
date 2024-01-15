@@ -1,4 +1,4 @@
-package pro.sky.hw_4_if_operator;
+package course_1.hw_4_if_operator;
 
 public class Task6 {
 
