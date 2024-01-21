@@ -3,16 +3,17 @@ package course_1.hw_7_cycle;
 public class Task5 {
 
     public static void main(String[] args) {
-        int allSavings = 0;
-        int deposit = 15000;
+        double targetSavings = 12000000;
+        double deposit = 15000;
+        double currentAmount = deposit;
         int month = 0;
-        while (allSavings < 12000000) { // не понял как сделать чтобы остановился до 12000000
-            allSavings = allSavings + deposit;
-            deposit = deposit + deposit / 100 * 7;
-            month = month + 1;
+        while (currentAmount < targetSavings) {
+            month++;
+            currentAmount *= 1.07;
             if (month % 6 == 0) {
-                System.out.println(month + " " + allSavings);
+                System.out.printf("Месяц %d: сумма накоплений составляет %.2f рублей%n", month, currentAmount);
             }
         }
+        System.out.printf("Месяц %d: накоплена нужная сумма %.2f рублей%n", month, currentAmount);
     }
 }

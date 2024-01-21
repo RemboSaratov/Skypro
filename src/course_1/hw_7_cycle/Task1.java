@@ -7,9 +7,9 @@ public class Task1 {
         int savings = 0;
         int month = 0;
         while (savings <= 2459000) {
-            savings = savings + savings/100;
+            savings = savings + savings/100; // решение с учетом накопления 1% от общей суммы
             savings = deposit + savings;
-            month = month + 1;
+            month++;
             System.out.println("Месяц " + month + ", сумма накоплений равна " + savings + " рублей");
         }
     }
