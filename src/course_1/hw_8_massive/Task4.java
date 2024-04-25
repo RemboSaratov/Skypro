@@ -1,9 +1,9 @@
 package course_1.hw_8_massive;
 
 import java.util.Arrays;
-
+//для коммита
 public class Task4 {
-
+// для коммита
     public static void main(String[] args) {
         int[] number = new int[3];
         number[0] = 1;
