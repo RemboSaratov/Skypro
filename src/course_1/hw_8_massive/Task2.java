@@ -10,18 +10,17 @@ public class Task2 {
         System.out.print(number[0] + ", ");
         System.out.print(number[1] + ", ");
         System.out.println(number[2]);
+        //
         double[] weights = {1.57, 7.654, 9.986};
         System.out.print(weights[0] + ", ");
         System.out.print(weights[1] + ", ");
         System.out.println(weights[2]);
+        //
         double [] box = new double[4];
         box[0] = 1.1;
         box[1] = 5.98;
         box[2] = 9.8787;
         box[3] = 45.876978;
-        System.out.print(box[0] + ", ");
-        System.out.print(box[1] + ", ");
-        System.out.print(box[2] + ", ");
-        System.out.print(box[3]);
+        System.out.print(box[0] + ", " + box[1] + ", " + box[2] + ", " + box[3]);
     }
 }
