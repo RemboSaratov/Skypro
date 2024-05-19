@@ -5,24 +5,16 @@ import java.time.LocalDate;
 public class Task2 {
 
     public static void main(String[] args) {
-        int clientOs = 0;
-        int clientDeviceYear = 2024;
-        checkDevice(clientOs, clientDeviceYear); // or checkDevice(0,2024)
+        checkDevice(1,2024);
     }
-
     public static void checkDevice(int clientOs, int clientDeviceYear) {
-        int currentYear = LocalDate.now().getYear();
-        if (clientDeviceYear < currentYear && clientOs == 1) {
-            // год выпуска устройства меньше текущего года,значит оно "старше"(из условия задачи) текущего года, я так понимаю
-            System.out.println("Установите облегченную версию приложения для Android по ссылке");
-        } else if (clientDeviceYear == currentYear && clientOs == 1) {
-            System.out.println("Установите версию приложения для Android по ссылке");
-        } else if (clientDeviceYear < currentYear && clientOs == 0) {
-            System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-        } else if (clientDeviceYear == currentYear && clientOs == 0) {
-            System.out.println("Установите версию приложения для iOS по ссылке");
-        } else {
+        if (clientDeviceYear <= 2000 || clientOs != 0 && clientOs != 1 ) {
             System.out.println("Не правильно введенные данные");
+        } else {
+            int currentYear = LocalDate.now().getYear();
+            var type = clientOs == 0 ? "Android" : "iOs";
+            var deviceYear = clientDeviceYear < currentYear ? "облегченную" : "обычную";
+            System.out.println("Установите " + deviceYear + " версию для системы " + type);
         }
     }
 }
