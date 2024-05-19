@@ -7,7 +7,7 @@ public class Task2 {
     public static void main(String[] args) {
         int clientOs = 0;
         int clientDeviceYear = 2024;
-        checkDevice(clientOs, clientDeviceYear); // or checkDevice(0,2023)
+        checkDevice(clientOs, clientDeviceYear); // or checkDevice(0,2024)
     }
 
     public static void checkDevice(int clientOs, int clientDeviceYear) {
