@@ -3,18 +3,25 @@ package course_1.hw_9_method;
 public class Task3 {
 
     public static void main(String[] args) {
-        printDeliveryDateCard(95);
+        int days = dayToDeliver(61);
+        System.out.println("Дней доставки " + days);
     }
-    public static void printDeliveryDateCard(int distance) {
-       if (distance > 0 && distance <= 20) {
-           System.out.println("Потребуется 1 день доставки");
-       } else if (distance > 20 && distance <= 60) {
-           System.out.println("Потребуется 2 дня доставки");
-       } else if (distance > 60 && distance <= 100) {
-           System.out.println("Потребуется 3 дня доставки");
-       } else {
-           System.out.println("Доставка не осуществляется");
-       }
+
+    public static void reportBug() {
+        System.out.println("!!!!!!!!");
+    }
+
+    public static int dayToDeliver(int distance) {
+        int days = 0;
+        if (distance > 0 && distance <= 20) {
+            days += 1;
+        } else if (distance > 20 && distance <= 60) {
+            days += 2;
+        } else if (distance > 60 && distance <= 100) {
+            days += 3;
+        } else {
+            reportBug();
+        }
+        return days;
     }
 }
-///
