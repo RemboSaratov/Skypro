@@ -1,18 +1,18 @@
 package course_1.hw10_object_and_class;
 
-public class Author {
+public class  Author {
 
-    String firstNameAuthor;
-    String secondNameAuthor;
+    private String firstName; // idea предлагает добавить final к privat в обоих класаах, но этого вроде как не требуется
+    private String secondName;
 
-    public Author(String firstNameAuthor, String secondNameAuthor) {
-        this.firstNameAuthor = firstNameAuthor;
-        this.secondNameAuthor = secondNameAuthor;
+    public Author(String firstName, String secondName) {
+        this.firstName = firstName;
+        this.secondName = secondName;
     }
-    public String getFirstNameAuthor() {
-        return firstNameAuthor;
+    public String getFirstName() {
+        return firstName;
     }
-    public String getSecondNameAuthor() {
-        return secondNameAuthor;
+    public String getSecondName() {
+        return secondName;
     }
 }

@@ -9,7 +9,7 @@ public class Main {
         Book two = new Book("The Selfish Gene", book2, 1976);
         // Проверка
         System.out.println("Название книги: " + one.getNameBook());
-        System.out.println("Автор: " + book1.getFirstNameAuthor() + " " + book1.getSecondNameAuthor());
+        System.out.println("Автор: " + book1.getFirstName() + " " + book1.getSecondName());
         System.out.println("Год выпуска: " + one.getPublishingYear());
         one.setPublishingYear(1834);
         System.out.println("Год выпуска: " + one.getPublishingYear());

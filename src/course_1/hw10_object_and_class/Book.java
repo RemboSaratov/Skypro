@@ -1,9 +1,9 @@
 package course_1.hw10_object_and_class;
 
 public class Book {
-    String nameBook;
-    Author author;
-    int publishingYear;
+    private String nameBook;
+    private Author author;
+    private int publishingYear;
 
     public Book(String nameBook, Author author, int publishingYear) {
         this.nameBook = nameBook;
