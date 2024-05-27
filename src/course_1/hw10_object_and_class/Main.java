@@ -13,5 +13,12 @@ public class Main {
         System.out.println("Год выпуска: " + one.getPublishingYear());
         one.setPublishingYear(1834);
         System.out.println("Год выпуска: " + one.getPublishingYear());
+        System.out.println();
+        // проверка дз 2
+        System.out.println(book1.toString());
+        System.out.println(book1.hashCode());
+        System.out.println(book1.equals(book2));
+        System.out.println();
+        System.out.println(one.toString());
     }
 }
