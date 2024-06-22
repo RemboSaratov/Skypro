@@ -20,8 +20,6 @@ public class Main {
         printClass.printCalcPuffendies(ZachariahSmith, JustinFinchFletchley);
         printClass.printCalcSlitherins(DracoMalfoy, GrahamMontague);
         printClass.printCalcHogwards(ZhouChang, DracoMalfoy );
-        System.out.println(ZhouChang.toString()); //  не могу создать метод в классе для методов чтобы выводилась
-        //вся информация по любому ученику, получается только через toString
-
+        System.out.println(GregoryGoyle.printProperties());
     }
 }

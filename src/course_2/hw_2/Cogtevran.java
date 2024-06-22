@@ -25,6 +25,14 @@ public class Cogtevran extends Hogwards {
                 " , creativity: " + creativity;
     }
 
+    public String printProperties() {
+        return  super.printPropertiesHogward() +
+                " , mind: " + mind +
+                " , wisdom: " + wisdom +
+                " , wit:" + wit +
+                " , creativity: " + creativity;
+    }
+
     public int getMind() {
         return mind;
     }

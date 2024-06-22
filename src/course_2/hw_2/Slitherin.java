@@ -15,6 +15,14 @@ public class Slitherin extends Hogwards {
         this.resourcefulness = resourcefulness;
         this.thirstForPower = thirstForPower;
     }
+    public String printProperties() {
+        return super.printPropertiesHogward() +
+                " , cunning: " + cunning +
+                " , determination: " + determination +
+                " , ambition: " + ambition +
+                " , resourcefulness: " + resourcefulness +
+                " , thirstForPower: " + thirstForPower;
+    }
 
     @Override
     public String toString() {

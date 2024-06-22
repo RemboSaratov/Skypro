@@ -10,6 +10,9 @@ public class Hogwards {
         this.spellPower = spellPower;
         this.transgressDistant = transgressDistant;
     }
+    public String printPropertiesHogward() {
+        return "Name: " + name + " , SpellPower: " + spellPower + " , Transgress Distant: " + transgressDistant;
+    }
 
     @Override
     public String toString() {

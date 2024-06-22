@@ -1,6 +1,6 @@
 package course_2.hw_2;
 
-public class Grifindor extends Hogwards{
+public class Grifindor extends Hogwards {
     private int nobility;
     private int honor;
     private int courage;
@@ -12,32 +12,39 @@ public class Grifindor extends Hogwards{
         this.courage = courage;
     }
 
-    @Override
-    public String toString() {
-        return super.toString() + ", Nobility: " + nobility + " , Honor: " + honor + " , Courage " + courage;
+    public String printProperties() {
+        return super.printPropertiesHogward() +
+                " , Nobility: " + nobility +
+                " , Honor: " + honor +
+                " , Courage " + courage;
     }
+        @Override
+        public String toString () {
+            return super.toString()
+                    + ", Nobility: " + nobility + " , Honor: " + honor + " , Courage " + courage;
+        }
 
-    public int getNobility() {
-        return nobility;
-    }
+        public int getNobility () {
+            return nobility;
+        }
 
-    public void setNobility(int nobility) {
-        this.nobility = nobility;
-    }
+        public void setNobility ( int nobility){
+            this.nobility = nobility;
+        }
 
-    public int getHonor() {
-        return honor;
-    }
+        public int getHonor () {
+            return honor;
+        }
 
-    public void setHonor(int honor) {
-        this.honor = honor;
-    }
+        public void setHonor ( int honor){
+            this.honor = honor;
+        }
 
-    public int getCourage() {
-        return courage;
-    }
+        public int getCourage () {
+            return courage;
+        }
 
-    public void setCourage(int courage) {
-        this.courage = courage;
+        public void setCourage ( int courage){
+            this.courage = courage;
+        }
     }
-}

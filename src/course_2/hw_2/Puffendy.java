@@ -11,7 +11,12 @@ public class Puffendy extends Hogwards {
         this.loyalty = loyalty;
         this.honesty = honesty;
     }
-
+    public String printProperties() {
+        return super.printPropertiesHogward() +
+                " , diligence: " + diligence +
+                " , loyalty: " + loyalty +
+                " , honesty: " + honesty;
+    }
     @Override
     public String toString() {
         return super.toString() +
