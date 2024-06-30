@@ -1,6 +1,6 @@
 package course_2.hw_3;
 
-public class Vehicle implements VehicleRepair {
+public abstract class Vehicle implements VehicleRepair {
 
     private String modelName;
     private int wheelsCount;
@@ -18,15 +18,16 @@ public class Vehicle implements VehicleRepair {
         return modelName;
     }
 
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
-    }
-
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель");
-    }
-
-    public void checkTrailer() {
-        System.out.println("Проверяем прицеп");
-    }
-}
+    public static void check(Car car, Bicycle bicycle, Truck truck) {
+        if (car != null) {
+            System.out.println("Обслуживаем " + car.getModelName());
+                car.vehicleRepair();
+            } else if (truck != null) {
+                System.out.println("Обслуживаем " + truck.getModelName());
+                    truck.vehicleRepair();
+            } else if (bicycle != null) {
+                System.out.println("Обслуживаем " + bicycle.getModelName());
+                    bicycle.vehicleRepair();
+                }
+            }
+        }

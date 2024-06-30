@@ -20,5 +20,12 @@ public class Main {
         System.out.println(book1.equals(book2));
         System.out.println();
         System.out.println(one.toString());
+        System.out.println();
+        Book[] book = {
+                new Book("H", book1, 1829),
+                new Book("H", book2, 1822),
+        };
+        System.out.println(book[0]);
     }
 }
+

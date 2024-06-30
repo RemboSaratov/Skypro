@@ -12,12 +12,18 @@ public class Main {
         Bicycle bicycle = new Bicycle("bicycle1", 2);
         Bicycle bicycle2 = new Bicycle("bicycle2", 2);
 
-        ServiceStation station = new ServiceStation();
-        station.check(car, null, null);
-        station.check(car2, null, null);
-        station.check(null, bicycle, null);
-        station.check(null, bicycle2, null);
-        station.check(null, null, truck);
-        station.check(null, null, truck2);
+
+        System.out.println(1);
+        Vehicle.check(car, null, null);
+        System.out.println(2);
+        Vehicle.check(car2, null, null);
+        System.out.println(3);
+        Vehicle.check(null, bicycle, null);
+        System.out.println(4);
+        Vehicle.check(null, bicycle2, null);
+        System.out.println(5);
+        Vehicle.check(null, null, truck);
+        System.out.println(6);
+        Vehicle.check(null, null, truck2);
     }
 }
